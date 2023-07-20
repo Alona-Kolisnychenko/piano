@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+    "title": "Piano "
+})
+<body>
+    @@include('html/header.html', {})
+    <main class="container">
+        <div class="info left">
+            <h2 class="info-title">Мажорні акорди</h2>
+            <ul class="info-list">
+               <li class="info-item">До мажор  - C+E+G <span>(A)</span></li>
+               <li class="info-item">Ре мажор - D+F#+A <span>(S)</span></li>
+               <li class="info-item">Мі мажор - E+G#+B <span>(D)</span></li>
+               <li class="info-item">Фа мажор - F+A+C <span>(F)</span></li>
+               <li class="info-item">Соль мажор - G+B+D <span>(G)</span></li>
+               <li class="info-item">Ля мажор - A+C#+E <span>(H)</span></li>
+               <li class="info-item">Сі мажор - B+D#+F# <span>(J)</span></li>
+            </ul>
+        </div>
+        <h1 class="title">Virtual Piano</h1>
+        <div class="wrapper">
+            <div class="black-keys">
+                <div class="key" id="db3"><span>1</span></div>
+                <div class="key" id="eb3"><span>2</span></div>
+                <div class="key empty"></div>
+                <div class="key" id="gb3"><span>4</span></div>
+                <div class="key" id="ab3"><span>5</span></div>
+                <div class="key" id="bb3"><span>6</span></div>
+                <div class="key empty"></div>
+                <div class="key" id="db4"><span>8</span></div>
+                <div class="key" id="eb4"><span>9</span></div>
+                <div class="key empty"></div>
+                <div class="key" id="gb4"><span>-</span></div>
+                <div class="key" id="ab4"><span>=</span></div>
+                <div class="key" id="bb4"><span>←</span></div>
+            </div>
+            <div class="white-keys">
+                <div class="key" id="c3"><span>↹</span><span>C<br>(до)</span></div>
+                <div class="key" id="d3"><span>Q</span><span>D<br>(ре)</span></div>
+                <div class="key" id="e3"><span>W</span><span>E<br>(мі)</span></div>
+                <div class="key" id="f3"><span>E</span><span>F<br>(фа)</span></div>
+                <div class="key" id="g3"><span>R</span><span>G<br>(соль)</span></div>
+                <div class="key" id="a3"><span>T</span><span>A<br>(ля)</span></div>
+                <div class="key" id="b3"><span>Y</span><span>B<br>(сі)</span></div>
+                <div class="key" id="c4"><span>U</span><span>C<br>(до)</span></div>
+                <div class="key" id="d4"><span>I</span><span>D<br>(ре)</span></div>
+                <div class="key" id="e4"><span>O</span><span>E<br>(мі)</span></div>
+                <div class="key" id="f4"><span>P</span><span>F<br>(фа)</span></div>
+                <div class="key" id="g4"><span>[</span><span>G<br>(соль)</span></div>
+                <div class="key" id="a4"><span>]</span><span>A<br>(ля)</span></div>
+                <div class="key" id="b4"><span>\</span><span>B<br>(сі)</span></div>
+                <div class="key" id="c5"><span>↩</span><span>C<br>(до)</span></div>
+            </div>
+        </div>
+        <p class="footnote"> * В списку акордів в дужках вказана клавіша на клавіатурі, яка відтворить звук аккорду.</p>
+        <div class="info right">
+            <h2 class="info-title">Мінорні акорди</h2>
+            <ul class="info-list">
+               <li class="info-item">До мінор  - C+D#+G<span>(Z)</span></li>
+               <li class="info-item">Ре мінор - D+F+A<span>(X)</span></li>
+               <li class="info-item">Мі мінор - E+G+B<span>(C)</span></li>
+               <li class="info-item">Фа мінор - F+G#+C<span>(V)</span></li>
+               <li class="info-item">Соль мінор - G+A#+D<span>(B)</span></li>
+               <li class="info-item">Ля мінор - A+C+E<span>(N)</span></li>
+               <li class="info-item">Сі мінор - B+D+F#<span>(M)</span></li>
+            </ul>
+        </div>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+</html>
