@@ -7,9 +7,7 @@
 .history/*
 
 /node_modules
-npm-debug.log
-yarn-error.log
-
 /dist
+.vscode
+package-lock.json
 
-piano.zip
