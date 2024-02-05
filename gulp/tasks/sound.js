@@ -7,6 +7,6 @@ export const sounds = ()=>{
                 message: "Error: <%= error.message %>"
             })
         ))
-        .pipe(app.plugins.newer(app.path.build.images))
+        .pipe(app.plugins.newer(app.path.build.sounds))
         .pipe(app.gulp.dest(app.path.build.sounds))
 } 

@@ -1,6 +1,6 @@
 export let configFTP = {
-    host: "",
-    user: "",
-    password: "",
+    host: "ftpupload.net",
+    user: "if0_34661864",
+    password: "TBTy1K5rntN",
     parallel: 5
 }
